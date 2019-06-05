@@ -66,8 +66,8 @@
     name: "home",
     data() {
       return {
-        sysName: "优惠券",
-        simpleName:"券",
+        sysName: "VUE",
+        simpleName:"V",
         collapsed: false
       }
     },
