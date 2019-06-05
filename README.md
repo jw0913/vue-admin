@@ -19,6 +19,7 @@ npm run build --report
 ```
 ###目录结构
 ```
+参考地址：https://segmentfault.com/a/1190000015472744
 src
 
 ├── assets          // 资源目录 图片，样式，iconfont
