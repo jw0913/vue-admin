@@ -50,8 +50,9 @@
             return row.address;
           },
           getUser:function () {
-           let data = api.getUser({});
-           console.info(data);
+           api.getUser({}).then(data =>{
+             this.tableData = data;
+           });
           }
         }
     }
