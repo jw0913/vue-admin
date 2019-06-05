@@ -3,4 +3,3 @@ import axios from 'axios';
 
 export const  login = params => {return axios.post(`${base}/login`,params).then(res=>res.data)};
 export const  getUser = params => {return axios.get(`${base}/user.json`,params).then(res=>res.data)};
-
