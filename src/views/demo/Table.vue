@@ -37,7 +37,7 @@
 </template>
 
 <script>
-    import api from '../../api';
+    import api from '../../api/index';
     export default {
         name: "Table",
         data() {

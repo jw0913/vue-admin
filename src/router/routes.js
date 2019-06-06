@@ -1,7 +1,10 @@
-import Home from '@/components/Home'
-import Table from '@/components/demo/Table'
-import Form from '@/components/demo/Form'
-import List from '@/components/demo/List'
+import Home from '@/views/Home'
+import Table from '@/views/demo/Table'
+import Form from '@/views/demo/Form'
+import List from '@/views/demo/List'
+/*import Vuex from '@/views/demo/Vuex'*/
+import ProductList from '@/views/vuex/ProductList'
+import ShoppingCart from  '@/views/vuex/ShoppingCart'
 let routes = [
     {
       path: '/login',
@@ -24,7 +27,7 @@ let routes = [
     },
     {
       path: '/first',
-      name: '示例',
+      name: '示例1',
       icon: 'el-icon-message',
       component: Home,
       leaf:false,
@@ -32,6 +35,17 @@ let routes = [
         { path: '/table', component: Table, name: '表格' },
         { path: '/form', component: Form, name: '表单' },
         { path: '/list', component: List, name: '列表' },
+      ]
+    },
+    {
+      path: '/first',
+      name: '示例2',
+      icon: 'el-icon-message',
+      component: Home,
+      leaf:false,
+      children: [
+        { path: '/ProductList', component: ProductList, name: 'ProductList' },
+        { path: '/ShoppingCart', component: ShoppingCart, name: 'ShoppingCart' }
       ]
     }
   ];
